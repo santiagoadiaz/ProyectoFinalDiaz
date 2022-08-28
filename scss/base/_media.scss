@@ -1,0 +1,172 @@
+/* @Media */
+
+@media (max-width: 575.98px) {
+
+    // general
+    .ghost-pages {
+        display: block !important;
+    }
+
+    .ghost {
+        display: none !important;
+    }
+
+    // header
+    .container-pages {
+        display: none !important;
+    }
+
+    // carousel
+    .height-carousel {
+        height: calc(100vh - 30rem) !important;
+    }
+
+    // dicotomia perro y gato
+    .container-category {
+        display: flex;
+        flex-wrap: wrap;
+
+        .container-category-dog {
+            height: 15rem !important;
+
+            .container-dog {
+                margin-top: 20% !important;
+                margin-left: 50%;
+                text-align: center;
+            }
+        }
+
+        .container-category-cat {
+            height: 15rem !important;
+
+            .container-cat {
+                margin-top: 20% !important;
+                margin-left: 50%;
+                text-align: center;
+            }
+        }
+    }
+
+    // featured-products
+    .container-product-mobile {
+        width: 85%;
+        margin-left: 12%;
+
+        // grid
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 5px;
+
+        .food-mobile {
+            height: 80rem;
+            width: 5rem;
+        }
+
+        .grid-one {
+            grid-column: 0 / 1;
+            grid-row: 1;
+        }
+
+        .grid-two {
+            grid-column: 1 / 2;
+            grid-row: 1;
+        }
+
+        .grid-three {
+            grid-column: 0 / 1;
+            grid-row: 2;
+        }
+
+        .grid-four {
+            grid-column: 1/ 2;
+            grid-row: 2;
+        }
+
+        .containerCard {
+            .text-product-one {
+                font-family: 'Bebas Neue', cursive;
+                margin: 20px 0 3px 0;
+                letter-spacing: 1px;
+                font-size: 0.8rem;
+                font-weight: 500;
+                color: #000000;
+            }
+
+            .text-product-two {
+                font-family: Arial;
+                margin: 3px 0 3px 0;
+                letter-spacing: 0.5px;
+                font-size: 0.8rem;
+                font-weight: 500;
+                color: #000000;
+            }
+
+            .text-product-three {
+                font-family: Arial;
+                margin: 3px 0 3px 0;
+                letter-spacing: 0px;
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: #afafaf;
+            }
+        }
+    }
+
+    // publicidad
+    .container-publicity {
+        flex-wrap: wrap;
+    }
+
+    // footer
+    .ghost-pages {
+
+        .dropdown {
+            display: block !important;
+
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.3em;
+            line-height: 35px;
+            letter-spacing: 2px;
+            margin-bottom: 0.05rem;
+            color: #ffffff;
+
+            .btn {
+                color: #ffffff;
+            }
+
+            .dropdown-menu {
+                .letras-footer {
+                    transition: all .1s ease-in-out;
+                    color: #000000;
+
+                    &:hover {
+                        color: #023A71;
+                    }
+                }
+            }
+
+            ul {
+                font-family: 'Bebas Neue', cursive;
+                line-height: 35px;
+                letter-spacing: 1px;
+                font-size: 0.8rem;
+                list-style-type: none;
+            }
+
+        }
+
+        .divider-mobile {
+            height: 2px;
+            width: 200px;
+            background-color: #ffffff;
+            margin: 30px auto;
+        }
+
+        .dr-footer-mobile {
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+    }
+}

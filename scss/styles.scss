@@ -1,0 +1,318 @@
+// components
+@import '../scss/components/footer';
+@import '../scss/components/complementarypages';
+@import '../scss/components/header';
+
+// base
+@import '../scss/base/extends';
+@import '../scss/base/media';
+
+
+/* general */
+body {
+
+    .dropdown {
+        position: inherit;
+    }
+
+    img,
+    svg {
+        vertical-align: 0% !important;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .logo {
+        transition: all .1s ease-in-out;
+        overflow: hidden;
+
+        &:hover {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+            filter: opacity(.8);
+        }
+    }
+
+    .img-auto {
+        height: 100%;
+        width: 100%;
+    }
+
+    .ghost-pages {
+        display: none;
+    }
+
+    .checkbtn {
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #cartfill-menu {
+        display: none;
+    }
+
+    // iconos 
+    .icon-cart-plus,
+    .icon-user,
+    .icon-phone,
+    .icon-facebook-squared,
+    .icon-instagram,
+    .icon-whatsapp {
+        font-size: 1.5rem;
+        color: #FFF;
+    }
+}
+
+// cart menu
+.container-cartfill {
+    position: fixed;
+    background: rgba(34, 34, 34, 0.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    content: "";
+    z-index: 9999;
+
+
+    .cartFill {
+        width: 26rem;
+        height: 100%;
+        padding: 30px 20px;
+        border: 1px solid #f3f3f3;
+        background: #fff;
+        position: absolute;
+        color: #222;
+        transition: all 0.3s ease;
+        z-index: 10001;
+        left: -3rem !important;
+        right: 54% !important;
+        top: -2rem !important;
+        will-change: unset !important;
+        transform: translateY(15%);
+        transform: translateX(-100%);
+
+        h2 {
+            @extend %fontBebasneue;
+            letter-spacing: 2px;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #000000;
+        }
+
+        .divider-cart {
+            height: 2px;
+            width: 150px;
+            background-color: black;
+            margin: 30px auto;
+        }
+
+        .list-group {
+            .cart-group {
+                display: flex;
+                list-style: none;
+                font-size: 0.8rem;
+
+                .img-cart {
+                    display: flex;
+                    align-items: flex-start;
+                    height: 5rem;
+                    width: 3rem;
+                }
+
+                .btn-height {
+                    display: flex;
+                    margin: auto;
+                    height: 2.4rem;
+                    width: 2.3em;
+                }
+            }
+        }
+
+    }
+
+    label {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        cursor: pointer;
+    }
+}
+
+#cartfill-menu:checked~.container-cartfill {
+    opacity: 1;
+    visibility: visible;
+}
+
+#cartfill-menu:checked~.container-cartfill .cartFill {
+    transform: translateX(0%);
+}
+
+/* featured products */
+.container-featuredProdcuts {
+
+    // title featured products
+    .productostext {
+        margin-top: 100px;
+        padding: 50px;
+        @extend %fontLondrina;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        color: #023A71;
+    }
+
+    // food for sale
+    .container-product {
+        width: 85%;
+        margin: auto;
+
+        // products
+        .containerCard {
+
+            // text product
+            .text-product-one {
+                @extend %fontBebasneue;
+                margin: 20px 0 3px 0;
+                letter-spacing: 1px;
+                font-size: 0.8rem;
+                font-weight: 500;
+                color: #000000;
+            }
+
+            // text product
+            .text-product-two {
+                font-family: Arial;
+                margin: 3px 0 3px 0;
+                letter-spacing: 0.5px;
+                font-size: 0.8rem;
+                font-weight: 500;
+                color: #000000;
+            }
+
+            // text product
+            .text-product-three {
+                font-family: Arial;
+                margin: 3px 0 3px 0;
+                letter-spacing: 0px;
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: #afafaf;
+            }
+        }
+    }
+}
+
+// food sale general
+.btn-food {
+    margin-top: 1rem;
+    background-color: #023A71;
+    width: 55%;
+    color: white;
+    cursor: pointer !important;
+}
+
+// food for sale mobile
+.food-size {
+    height: 18rem;
+    width: 10rem;
+}
+
+// nav bar mobile
+// boton close
+.boton-navbar {
+    padding: 1rem;
+    background-color: #023A71;
+    color: #FFF;
+}
+
+.boton-margin {
+    @extend %fontBebasneue;
+    margin-left: 1rem;
+}
+
+.nav-link {
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+// dog encabezado
+.container-encabezado-dog {
+    background-color: #FFB07A;
+    color: #812a00;
+    @extend %encabezado-html;
+
+    .text-encabezado-dog {
+        color: #812a00;
+        @extend %text-encabezado;
+    }
+
+    div {
+        margin: 15px;
+    }
+}
+
+// alm salud accs img
+.container-img-asa {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    background-color: #FFB07A;
+
+    // alm salud accs text
+    .container-text-asa {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .letraPerro {
+            @extend %fontLondrina;
+            transition: all 500ms ease-out;
+            padding: 2rem;
+            color: #812a00;
+
+            &:hover {
+                color: white
+            }
+        }
+    }
+}
+
+// filtros
+.container-filtro {
+    margin-top: 50px;
+    color: #FFB07A;
+    gap: 20px;
+    flex-wrap: wrap;
+    height: 3rem;
+
+    margin-bottom: 5rem;
+
+    .propiedades-boton {
+        margin-top: 0.5rem;
+        @extend %fontBebasneue;
+        color: #812a00;
+    }
+}
+
+// vermas
+.vermas {
+    @extend %vermas;
+}

@@ -1,0 +1,43 @@
+%encabezado-html {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Londrina Solid', cursive;
+}
+
+%text-encabezado {
+    font-family: 'Londrina Solid', cursive;
+    display: flex;
+    flex-direction: row;
+}
+
+%vermas {
+    background-color: #023A71;
+    color: #ffffff;
+    height: 3rem;
+    width: 8rem;
+    border: 1px solid #000000;
+    font-size: 1.1rem;
+    font-family: 'Londrina Solid', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+
+    transition: all 500ms ease-out;
+
+    &:hover {
+        background-color: #ffffff;
+        color: #023A71;
+    }
+}
+
+%fontLondrina {
+    font-family: 'Londrina Solid', cursive;
+}
+
+%fontBebasneue {
+    font-family: 'Bebas Neue', cursive;
+}

@@ -1,0 +1,26 @@
+/* container pages mobile */
+.margin-top-bar {
+    margin-top: 20px;
+}
+
+/* complementary pages*/
+.container-pages {
+    display: flex;
+    background-color: #a7d7e3;
+    justify-content: center;
+    padding: 15px;
+
+    .pages {
+        @extend %fontLondrina;
+        color: #023A71;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-left: 1.5rem;
+        transition: all 200ms ease;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+}

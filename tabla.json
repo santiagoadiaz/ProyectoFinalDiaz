@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "marca": "DOG CHOW",
+        "nombre": "ADULT PAVO",
+        "precio": 1800,
+        "stock": 10,
+        "img": "../image/food-dog-1.webp"
+    },
+    {
+        "id": 2,
+        "marca": "DOG CHOW",
+        "nombre": "CACHORRO",
+        "precio": 1200,
+        "stock": 8,
+        "img": "../image/food-dog-2.webp"
+    },
+    {
+        "id": 3,
+        "marca": "PEDIGREE",
+        "nombre": "DENTASTIX PEQUE",
+        "precio": 2100,
+        "stock": 5,
+        "img": "../image/food-dog-3.webp"
+    },
+    {
+        "id": 4,
+        "marca": "DOG CHOW",
+        "nombre": "ADULT CARNE",
+        "precio": 1200,
+        "stock": 1,
+        "img": "../image/food-dog-4.webp"
+    }
+]

@@ -1,0 +1,34 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    background-color: #023A71;
+    box-sizing: border-box;
+    position: fixed;
+
+    .margin-header {
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+        .chunis-header {
+            margin-left: 3rem;
+            @extend %fontLondrina;
+            letter-spacing: 2px;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .petshop-header {
+            margin-left: 3.3rem;
+            @extend %fontLondrina;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+    }
+}

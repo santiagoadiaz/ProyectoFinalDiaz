@@ -1,0 +1,59 @@
+/* footer */
+
+footer {
+    background-color: #023A71;
+
+    .container-footer {
+        display: grid;
+        height: 20em;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: 1fr;
+
+        // sobre nosotros - novedades - redes
+        .container-footer-col {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+
+            ul {
+                @extend %fontBebasneue;
+                line-height: 35px;
+                letter-spacing: 1px;
+                font-size: 0.8rem;
+                list-style-type: none;
+                color: #ffffff;
+
+                .title-footer {
+                    @extend %fontBebasneue;
+                    font-size: 1.3em;
+                    line-height: 35px;
+                    letter-spacing: 2px;
+                    margin-bottom: 50px;
+                }
+
+                .letras-footer {
+                    color: #ffffff;
+
+                    &:hover {
+                        color: #a7d7e3;
+                    }
+                }
+            }
+        }
+    }
+
+    // divider
+    .divider {
+        height: 2px;
+        width: 500px;
+        background-color: #a7d7e3;
+        margin: 30px auto;
+    }
+
+    // todos los derechos
+    .dr-footer {
+        color: #ffffff;
+        margin-bottom: 50px;
+    }
+}
